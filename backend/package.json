@@ -1,0 +1,22 @@
+{
+  "name": "job-tracker-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@fastify/multipart": "^8.1.0",
+    "@langchain/core": "^0.1.36",
+    "@langchain/langgraph": "^0.0.21",
+    "@langchain/openai": "^0.0.19",
+    "fastify": "^4.26.0",
+    "langchain": "^0.1.21",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.4"
+  }
+}

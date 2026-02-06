@@ -1,0 +1,43 @@
+.best-matches {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid var(--accent-primary);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+}
+
+.best-matches-header {
+  margin-bottom: 20px;
+}
+
+.best-matches-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.trophy-icon {
+  color: var(--warning);
+}
+
+.best-matches-header p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.best-matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .best-matches {
+    padding: 20px;
+  }
+  
+  .best-matches-grid {
+    grid-template-columns: 1fr;
+  }
+}

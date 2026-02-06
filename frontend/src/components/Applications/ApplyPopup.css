@@ -1,0 +1,115 @@
+.apply-popup {
+  max-width: 420px;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.popup-close:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.popup-header {
+  margin-bottom: 28px;
+}
+
+.popup-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.job-info {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.job-info strong {
+  color: var(--text-primary);
+}
+
+.popup-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.popup-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: left;
+}
+
+.popup-btn:hover {
+  transform: translateX(4px);
+}
+
+.popup-btn svg {
+  flex-shrink: 0;
+}
+
+.popup-btn span:first-of-type {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-hint {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Button variants */
+.popup-btn.yes {
+  border-color: var(--success);
+}
+
+.popup-btn.yes:hover {
+  background: var(--success-bg);
+}
+
+.popup-btn.yes svg {
+  color: var(--success);
+}
+
+.popup-btn.no:hover {
+  background: var(--error-bg);
+  border-color: var(--error);
+}
+
+.popup-btn.no svg {
+  color: var(--text-muted);
+}
+
+.popup-btn.earlier:hover {
+  background: var(--warning-bg);
+  border-color: var(--warning);
+}
+
+.popup-btn.earlier svg {
+  color: var(--warning);
+}
